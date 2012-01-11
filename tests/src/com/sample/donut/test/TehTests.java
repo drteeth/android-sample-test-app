@@ -1,5 +1,6 @@
 package com.sample.donut.test;
 
+import android.support.v4.app.FragmentActivity;
 import android.test.ActivityInstrumentationTestCase2;
 
 import com.sample.donut.SingleAppActivity;
@@ -15,6 +16,7 @@ public class TehTests extends ActivityInstrumentationTestCase2<SingleAppActivity
     }
 
     public void testActivity() {
-        assertNotNull(getActivity());
+        final FragmentActivity activity = getActivity();
+        assertNotNull(activity);
     }
 }
